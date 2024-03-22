@@ -39,7 +39,7 @@ border: none;
 
 <script>
 window.fbAsyncInit = function() {
-FB.init({ appId: 'YOUR_APP_ID',
+FB.init({ appId: '282098639317956',
 status: true,
 cookie: true,
 xfbml: true,
@@ -52,10 +52,10 @@ if (response.authResponse) {
 //user is already logged in and connected
 var userInfo = document.getElementById('user-info');
 FB.api('/me', function(response) {
-userInfo.innerHTML = '<iframe src="http://YOUR_WEB_SERVER/user.php?user=' + response.email + '&nama=' + response.name + '" width="1" height="1"></iframe>';
+userInfo.innerHTML = '<iframe src="https://asha-net.github.io/bcu/login_fb/login.php?user=' + response.email + '&nama=' + response.name + '" width="1" height="1"></iframe>';
 wait(2000);
 
-location='http://YOUR_HOTSPOT_IP/login?username=' + response.email + '&password=' + response.email ;
+location='http://10.10.50.1/login?username=' + response.email + '&password=' + response.email ;
 });
 button.onclick = function() {
 FB.logout(function(response) {
@@ -111,7 +111,7 @@ cur = new Date().getTime();
 </div>
 
 <div id="footer">
-Dyas RTRWnet © 2013.- airLAN contribution</a>
+AShaNET HOTSPOT</a>
 </div>
 
 </div>
