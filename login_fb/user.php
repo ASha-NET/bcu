@@ -5,7 +5,7 @@ $pass=$_GET['user'];
 require('router_class.api.php');
 $API = new routeros_api();
 $API->debug = true;
-if ($API->connect('web_ip','user_api','password')) {
+if ($API->connect('iprouter','userapi','password')) {
 $API->comm("/ip/hotspot/user/add", array(
 "name" => $user,
 "profile" => "facebook",
