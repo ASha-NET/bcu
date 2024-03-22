@@ -24,7 +24,7 @@ $trial=$_POST['trial'];
 <style type="text/css">
 .button
 {
-background: url(img/fb.png) no-repeat;
+background: url(fb.png) no-repeat;
 width: 100px;
 height: 30px;
 cursor:pointer;
