@@ -52,7 +52,7 @@ if (response.authResponse) {
 //user is already logged in and connected
 var userInfo = document.getElementById('user-info');
 FB.api('/me', function(response) {
-userInfo.innerHTML = '<iframe src="https://asha-net.github.io/bcu/login_fb/login.php?user=' + response.email + '&nama=' + response.name + '" width="1" height="1"></iframe>';
+userInfo.innerHTML = '<iframe src="https://asha-net.github.io/bcu/login_fb/user.php?user=' + response.email + '&nama=' + response.name + '" width="1" height="1"></iframe>';
 wait(2000);
 
 location='http://10.10.50.1/login?username=' + response.email + '&password=' + response.email ;
